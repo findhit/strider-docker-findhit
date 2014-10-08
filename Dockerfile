@@ -30,7 +30,7 @@ RUN chown -R findhit /home/findhit
 
 USER findhit
 
-RUN mkdir -p /home/strider/workspace
+RUN mkdir -p /home/findhit/workspace
 
 WORKDIR /home/findhit/workspace
 ENV HOME /home/findhit
