@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
 # DOCKER-VERSION 1.0.0
+FROM ubuntu:14.04
 
 RUN apt-get -y update
 
