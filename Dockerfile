@@ -19,7 +19,7 @@ RUN apt-get install -y python-pip
 RUN pip install awscli
 
 # PM2 instalation
-RUN npm install -g pm2 --unsafe-perm
+RUN npm install pm2@latest -g --unsafe-perm
 
 # Underscore-cli instalation
 RUN npm install -g underscore-cli
