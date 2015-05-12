@@ -4,8 +4,14 @@ FROM ubuntu:14.04
 RUN apt-get -y update
 
 # Node.js and Git are required
-RUN apt-get -y install nodejs npm git
+RUN apt-get -y install nodejs npm git wget curl
 RUN update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+RUN npm install -g npm
+
+# Install node v0.12
+
+RUN npm install -g n
+RUN n latest
 
 # git wants this
 RUN locale-gen en_US.UTF-8
